@@ -1,7 +1,9 @@
 <ag-grid-angular
-  class="ag-theme-dark"
+  class="ag-theme-fresh"
   style="height: 500px; width: 70%;"
   [rowData]="rowData$ | async"
   [columnDefs]="colDefs"
   [defaultColDef]="defaultColDef"
+  [animateRows]="true"
+  (cellClicked)="onCellClicked($event)"
 ></ag-grid-angular>
